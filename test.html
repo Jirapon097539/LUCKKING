@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="package/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      /* ให้รูปปรับขนาดตามความกว้างของ container */
+      height: auto;
+      /* ให้ความสูงปรับตามอัตราส่วน */
+      object-fit: contain;
+      /* ปรับให้รูปไม่ถูกตัดหรือบีบจนผิดสัดส่วน */
+    }
+
+    /* ปรับให้รูปแสดงเต็มหน้าจอสำหรับมือถือ */
+    @media (max-width: 768px) {
+      .swiper-slide img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    /* สไตล์สำหรับ swiper ที่สอง */
+    .swiper1 {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide1 {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide1 div {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .google-maps {
+
+      position: relative;
+
+      padding-bottom: 75%;
+
+      height: 0;
+
+      overflow: hidden
+    }
+
+    .google-maps iframe {
+
+      position: absolute;
+
+      top: 0;
+
+      left: 0;
+
+      width: 100% !important;
+
+      height: 100% !important;
+
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+  <div class="google-maps">
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.979890275309!2d100.57079657485646!3d13.780085786614746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29c2abef94b43%3A0x8930e2bde2ccb856!2z4Lit4Liy4LiE4Liy4Lij4LmA4Liq4Lij4Li04Lih4LiX4Lij4Lix4Lie4Lii4LmM!5e0!3m2!1sth!2sth!4v1735117080553!5m2!1sth!2sth"
+      width="600" height="450" frameborder="0" style="border:0"></iframe>
+
+  </div>
+  <!-- Swiper สำหรับรูปภาพ -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="All/30.10.24INFLUENCER.jpg" alt="Slide 1"></div>
+      <div class="swiper-slide"><img src="All/30.10.24INFLUENCER.jpg" alt="Slide 2"></div>
+      <div class="swiper-slide"><img src="All/30.10.24INFLUENCER.jpg" alt="Slide 3"></div>
+      <div class="swiper-slide"><img src="All/30.10.24INFLUENCER.jpg" alt="Slide 4"></div>
+      <div class="swiper-slide"><img src="All/30.10.24INFLUENCER.jpg" alt="Slide 5"></div>
+      <div class="swiper-slide"><img src="All/30.10.24INFLUENCER.jpg" alt="Slide 6"></div>
+      <div class="swiper-slide"><img src="All/30.10.24INFLUENCER.jpg" alt="Slide 7"></div>
+      <div class="swiper-slide"><img src="All/30.10.24INFLUENCER.jpg" alt="Slide 8"></div>
+      <div class="swiper-slide"><img src="All/30.10.24INFLUENCER.jpg" alt="Slide 9"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper สำหรับข้อความ -->
+  <div class="swiper mySwiper1">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide swiper-slide1">
+        <div><img src="All/FB0.1Cover-Facebook.jpg" alt="Slide 1"></div>
+      </div>
+      <div class="swiper-slide swiper-slide1">
+        <div><img src="All/181224.jpg" alt="Slide 1"></div>
+      </div>
+      <div class="swiper-slide swiper-slide1">
+        <div><img src="All/141267UpSceen.jpg" alt="Slide 1"></div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+<!-- Service Section Start -->
+<div style="margin-bottom: 50px;margin-top: 50px;">
+  <div class="container px-lg-5">
+      <div class=" position-relative text-center mb-5 animation zoomIn" data-wow-delay="0.5s">
+          <span class="position-relative" style="font-size: 14px;">บริการ
+              </spen><strong class="text-danger test-font2"
+                  style="font-size: 24px; font-weight: 900; ">Luckking</strong>
+              <h2 class="mt-2 test-font txt-service" style="font-size: 18px; font-weight: 400;">
+                  บริการแพลตฟอร์มที่น่าสนใจ</h2>
+
+
+      </div>
+      <div class="row g-4">
+          <!-- บริการ 1: ซื้อสิทธิ์ ลุ้นสิทธิ์ -->
+          <div class="col-lg-6 col-md-6 animated zoomIn" data-wow-delay="0.5s ">
+              <div class="service-item rounded bg-light overflow-hidden service-hover">
+                  <img src="All/Recommend2.jpg" alt="ซื้อสิทธิ์ ลุ้นสิทธิ์" style="width: 100%;">
+                  <div class="p-4 text-center">
+                      <h5 class="mb-3 size-font18">ซื้อสิทธิ์ ลุ้นสิทธิ์</h5>
+                      <p class="why-font">เลือกซื้อสิทธิ์และร่วมสนุกกับการลุ้นรางวัลสุดพิเศษ
+                          ทุกการซื้อเพิ่มโอกาสในการเป็นผู้โชคดี</p>
+                  </div>
+              </div>
+          </div>
+          <!-- บริการ 2: นับก้าวเดิน เพื่อแลกคะแนน -->
+          <div class="col-lg-6 col-md-6 animated zoomIn" data-wow-delay="0.5s">
+              <div class="service-item rounded bg-light overflow-hidden service-hover">
+                  <img src="All/Tap2Walk2.jpg" alt="นับก้าวเดิน เพื่อแลกคะแนน" style="width: 100%;">
+                  <div class="p-4 text-center">
+                      <h5 class="mb-3 size-font18">นับก้าวเดิน เพื่อแลกคะแนน</h5>
+                      <p class="why-font">สะสมคะแนนจากทุกก้าวที่คุณเดิน
+                          แล้วนำคะแนนไปลุ้นรางวัลหรือแลกสิทธิพิเศษได้ทันที
+                      </p>
+                  </div>
+              </div>
+          </div>
+          <!-- บริการ 3: เช็คอินรายวัน -->
+          <div class="col-lg-6 col-md-6 animated zoomIn" data-wow-delay="0.5s">
+              <div class="service-item rounded bg-light overflow-hidden service-hover">
+                  <img src="All/Recommend2.jpg" alt="เช็คอินรายวัน" style="width: 100%;">
+                  <div class="p-4 text-center">
+                      <h5 class="mb-3 size-font18">เช็คอินรายวัน</h5>
+                      <p class="why-font">สนุกกับการเช็คอินในทุกวันเพื่อสะสมสิทธิ์และคะแนน
+                          แลกเป็นของรางวัลหรือโอกาสพิเศษ
+                      </p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- บริการ 4: ชวนเพื่อน เพื่อรับค่าคอม -->
+          <div class="col-lg-6 col-md-6 animated zoomIn" data-wow-delay="0.5s">
+              <div class="service-item rounded bg-light overflow-hidden service-hover">
+                  <img src="All/Tap1Point.jpg" alt="ชวนเพื่อน เพื่อรับค่าคอม" style="width: 100%;">
+                  <div class="p-4 text-center">
+                      <h5 class="mb-3 size-font18">ชวนเพื่อน เพื่อรับค่าคอม</h5>
+                      <p class="why-font">แบ่งปันความสนุกและรับผลตอบแทนจากการชวนเพื่อนเข้าร่วมแพลตฟอร์ม
+                          พร้อมสิทธิพิเศษเพิ่มเติม</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="py-5 container">
+  <div class="container px-lg-5">
+      <!-- Service Title -->
+      <div class=" position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="position-relative d-inline ">บริการของเรา</h6>
+          <h2 class="mt-2">บริการที่คุณจะได้รับจาก Luckking</h2>
+      </div>
+      <div class="row">
+          <div class="col-md-3 " style="background-color: rgb(239, 233, 233);">
+              <!-- <img src="All/4.1.68AW iPad.jpg" alt="" srcset="" style="width: 100%; height: auto;"> -->
+          </div>
+          <div class="col-md-3 box-ser-item text-center">
+              <h4 class="mb-3">รางวัลและโปรโมชั่น</h4>
+              <p>
+                  เพลิดเพลินกับรางวัลและโปรโมชันพิเศษที่ Luckking
+              </p>
+          </div>
+          <div class="col-md-3 box-ser-item" style="background-color: rgb(239, 233, 233);"></div>
+          <div class="col-md-3 box-ser-item text-center">
+              <h4 class="mb-3">รับประกันของแท้ทุกชิ้น</h4>
+              <p>
+                  รับประกันสินค้าทุกชิ้นที่คุณซื้อจากเราว่าเป็นของแท้
+              </p>
+          </div>
+          <div class="col-md-3 box-ser-item text-center">
+              <h4 class="mb-3">การจัดส่งที่รวดเร็ว</h4>
+              <p>
+                  บริการจัดส่งสินค้าของเรามีความรวดเร็วและสามารถติดตามสถานะการจัดส่งได้ตลอดเวลา
+              </p>
+          </div>
+          <div class="col-md-3 box-ser-item" style="background-color: rgb(239, 233, 233);"></div>
+          <div class="col-md-3 box-ser-item text-center">
+              <h4>
+                  บริการลูกค้าสัมพันธ์
+              </h4>
+              <p>
+                  บริการลูกค้าสัมพันธ์ของเราพร้อมให้บริการคุณตลอด 24 ชั่วโมง
+              </p>
+          </div>
+          <div class="col-md-3 box-ser-item" style="background-color: rgb(239, 233, 233);"></div>
+      </div>
+  </div>
+</div>
+  <!-- Swiper JS -->
+  <script src="package/swiper-bundle.js"></script>
+
+  <!-- Initialize Swiper สำหรับรูปภาพ -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,  // จำนวนสไลด์ที่แสดงพร้อมกันบนหน้าจอใหญ่
+      spaceBetween: 20,   // ระยะห่างระหว่างสไลด์
+      loop: true,         // ให้สไลด์วนรอบ
+      autoplay: {
+        delay: 2500,      // ระยะเวลาในการสไลด์อัตโนมัติ (มิลลิวินาที)
+        disableOnInteraction: false,  // การเลื่อนจะไม่หยุดหากมีการโต้ตอบ
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        425: {
+          slidesPerView: 1, // แสดงเพียง 1 รูป
+        },
+        768: {
+          slidesPerView: 3, // แสดง 3 รูป
+        },
+      },
+    });
+  </script>
+
+  <!-- Initialize Swiper สำหรับข้อความ -->
+  <script>
+    var swiper1 = new Swiper(".mySwiper1", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 2500,      // ระยะเวลาในการสไลด์อัตโนมัติ (มิลลิวินาที)
+        disableOnInteraction: false,  // การเลื่อนจะไม่หยุดหากมีการโต้ตอบ
+      },
+    });
+  </script>
+
+</body>
+
+</html>
+<div class="embed-responsive embed-responsive-21by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+</div>
+
+
+<section class="py-5 overflow-hidden">
+  <div class="container px-lg-5">
+      <div class="row">
+          <div class="col-md-12">
+              <div
+                  class=" container px-lg-5 section-header d-flex flex-wrap flex-wrap justify-content-between mb-5">
+                  <h2 class="section-title justify-content-center">ลูกค้าใหม่</h2>
+
+                  <div class="d-flex align-items-center">
+                      <p class="btn-link text-decoration-none all-viwe"> ทั้งหมด</p>
+                      <div class="swiper-buttons">
+                          <button class="swiper-prev brand-carousel-prev btn btn-yellow">❮</button>
+                          <button class="swiper-next brand-carousel-next btn btn-yellow">❯</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12 ">
+              <div class="brand-carousel swiper">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <div class="card mb-3 p-3 rounded-4 shadow border-0">
+                              <div class="row g-0">
+                                  <div class="col-md-12">
+                                      <div class="card-body py-0">
+                                          <p class="text-muted mb-0">สิทธิพิเศษ</p>
+                                          <h5 class="card-title">มั่นใจของแท้ 100% asfdasdf</h5>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card mb-3 p-3 rounded-4 shadow border-0">
+                              <div class="row g-0">
+
+                                  <div class="col-md-12">
+
+                                      <div class="card-body py-0">
+                                          <p class="text-muted mb-0">สิทธิพิเศษ</p>
+                                          <h5 class="card-title">มั่นใจของแท้ 100%</h5>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card mb-3 p-3 rounded-4 shadow border-0">
+                              <div class="row g-0">
+
+                                  <div class="col-md-12">
+
+                                      <div class="card-body py-0">
+                                          <p class="text-muted mb-0">สิทธิพิเศษ</p>
+                                          <h5 class="card-title">มั่นใจของแท้ 100%</h5>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card mb-3 p-3 rounded-4 shadow border-0">
+                              <div class="row g-0">
+
+                                  <div class="col-md-12i">
+
+                                      <div class="card-body py-0">
+                                          <p class="text-muted mb-0">สิทธิพิเศษ</p>
+                                          <h5 class="card-title">มั่นใจของแท้ 100%</h5>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card mb-3 p-3 rounded-4 shadow border-0">
+                              <div class="row g-0">
+                                  <div class="col-md-12">
+                                      <div class="card-body py-0">
+                                          <p class="text-muted mb-0 " style="font-size: 18px;">สิทธิพิเศษ</p>
+                                          <h5 class="card-title">มั่นใจของแท้ 100%</h5>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card mb-3 p-3 rounded-4 shadow border-0">
+                              <div class="row g-0">
+                                  <div class="col-md-12">
+                                      <div class="card-body py-0">
+                                          <p class="text-muted mb-0">สิทธิพิเศษ</p>
+                                          <h5 class="card-title">มั่นใจของแท้ 100%</h5>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
