@@ -312,9 +312,15 @@
 
           .swiper-slide img {
               width: 100%;
-              height: auto;
+              height: 125px;
           }
-
+          .grid-container {
+            display: grid;
+            grid-template-columns: auto ;
+            gap: 11px;
+            padding: 5px;
+            width: 50px;
+          }
           .navbar-light {
               width: 100%;
               top: 0;
@@ -322,7 +328,17 @@
               border-bottom: 1px solid rgba(256, 256, 256, .1);
 
           }
-
+          .border-about{
+            border-radius: 24px;
+            padding-top: 20px !important;
+            text-align: center !important;
+          }
+          .text-con-luck{
+            font-size: 14px !important;
+          }
+          .gap-moblie{
+            gap: 17px !important;
+          }
           .sticky-top.navbar-light {
               position: fixed;
               background: #cc232a;
@@ -397,9 +413,6 @@
               font-size: 13px !important;
           }
 
-          .border-about {
-              font-size: 16px;
-          }
 
           .colum-gap {
               gap: 10px;
