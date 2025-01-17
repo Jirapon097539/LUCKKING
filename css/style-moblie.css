@@ -418,9 +418,9 @@
           }
 
 
-          .colum-gap {
+          /* .colum-gap {
               gap: 10px;
-          }
+          } */
 
           .service-header-moblie {
               width: 100% !important;
@@ -537,9 +537,9 @@
 
       /* Responsive Design */
       @media (max-width: 768px) {
-          .row {
+          /* .row {
               flex-direction: column;
-          }
+          } */
 
           .col-md-5,
           .col-md-7,
@@ -549,6 +549,8 @@
               padding-bottom: 50px;
     
           }
+          .learning1 .row {
+            flex-direction: column-reverse;}
       }
 
       @media (max-width: 576px) {
