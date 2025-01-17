@@ -107,7 +107,7 @@ body {
 
 .luck-font {
     font-family: emoji;
-    text-shadow: -1px -1px 3px #d20f0f;
+    text-shadow: -1px -1px 1px #d20f0f;
 }
 
 .lottie-web {
