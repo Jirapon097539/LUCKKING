@@ -1,0 +1,460 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Promotion Banner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .banner {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+            width: 90%;
+            max-width: 1200px;
+            border-radius: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .banner .text-content {
+            flex: 1;
+            margin-right: 20px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .banner h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .banner p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .banner .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            background: #ffffff;
+            color: #ff7e5f;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .banner .btn:hover {
+            background: #ff7e5f;
+            color: #ffffff;
+        }
+
+        .banner .image-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .banner .image-content img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .promo-section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+            margin-top: 20px;
+        }
+
+        .promo-box {
+            background: white;
+            color: #333;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .promo-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .banner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .banner .text-content {
+                margin: 0 0 20px 0;
+            }
+
+            .banner .image-content img {
+                max-width: 80%;
+            }
+
+            .promo-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="text-content">
+            <h1>ให้เราดูแลคุณ เพราะฝุ่นมีทุกที่</h1>
+            <p>เลือกซื้อเครื่องฟอกอากาศคุณภาพสูง พร้อมโปรโมชั่นสุดพิเศษ</p>
+            <a href="#shop" class="btn" aria-label="Shop Now">ช้อปเลย</a>
+        </div>
+        <div class="image-content">
+            <img src="path/to/your/image.jpg" alt="Air Purifier">
+        </div>
+    </div>
+    <div class="promo-section">
+    </div>
+
+    <script>
+        const promos = [
+            { title: "ผ่อน 0%", description: "นานสูงสุด 4 เดือน" },
+            { title: "ลดหย่อนภาษี", description: "สูงสุด 30,000.-" },
+            { title: "รับคูปอง", description: "100.- เมื่อช้อปครบ 1,000.-" },
+            { title: "ลดเพิ่ม", description: "สูงสุด 4,500.-" }
+        ];
+
+        const promoSection = document.querySelector(".promo-section");
+        promoSection.innerHTML = promos.map(promo => `
+            <div class="promo-box">
+                <h2>${promo.title}</h2>
+                <p>${promo.description}</p>
+            </div>
+        `).join("");
+    </script>
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luckking Product Promo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, #ff9966, #ff5e62);
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: white;
+            color: #ff5e62;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff5e62;
+            color: white;
+        }
+
+        /* Product Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .product-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .product-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .product-card .price {
+            font-size: 1.2rem;
+            color: #e74c3c;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .promo-section {
+            padding: 30px;
+            background: #ffcc00;
+            color: #333;
+        }
+
+        .promo-section h2 {
+            font-size: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>โปรโมชันพิเศษจาก Luckking</h1>
+        <p>ลุ้นรางวัลใหญ่ทุกสัปดาห์ เพียงสะสมเหรียญ Luckking</p>
+        <a href="#" class="btn">เข้าร่วมเลย</a>
+    </div>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250" alt="Product 1">
+            <h2>iPhone 15 Pro</h2>
+            <p>ลุ้นรับ iPhone 15 Pro เพียงใช้ 50 เหรียญ</p>
+            <p class="price">50 Luckking Coins</p>
+            <a href="#" class="btn">แลกรับสิทธิ์</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250" alt="Product 2">
+            <h2>PlayStation 5</h2>
+            <p>เกมเมอร์ห้ามพลาด PS5 สุดฮิต</p>
+            <p class="price">100 Luckking Coins</p>
+            <a href="#" class="btn">แลกรับสิทธิ์</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250" alt="Product 3">
+            <h2>ทองคำแท่ง 1 บาท</h2>
+            <p>สะสมเหรียญแล้วลุ้นทองคำแท่ง!</p>
+            <p class="price">150 Luckking Coins</p>
+            <a href="#" class="btn">แลกรับสิทธิ์</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250" alt="Product 4">
+            <h2>Apple Watch Ultra</h2>
+            <p>ลุ้นรับ Smartwatch สุดล้ำ</p>
+            <p class="price">80 Luckking Coins</p>
+            <a href="#" class="btn">แลกรับสิทธิ์</a>
+        </div>
+    </div>
+    <div class="promo-section">
+        <h2>🔥 โปรโมชั่นสุดพิเศษ 🔥</h2>
+        <p>สมัครสมาชิกใหม่ รับโบนัส 100 เหรียญ ฟรี!</p>
+    </div>
+<section class="product-section">
+    <div class="container">
+        <div class="product-layout">
+            <div class="large-image">
+                <img src="images/product/large-product.jpg" alt="สินค้าขนาดใหญ่">
+            </div>
+
+            <div class="product-cards-column">
+                <div class="product-card">
+                    <img src="images/product/product3.jpg" alt="สินค้า 1">
+                    <div class="promo-box">
+                        <div>โปรโมชั่นพิเศษ!</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>สินค้า 1</h3>
+                        <p class="product-description">รายละเอียดสินค้า 1 ที่น่าสนใจ</p>
+                        <p class="product-price">฿500</p>
+                        <button class="btn">ซื้อเลย</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/product/product3.jpg" alt="สินค้า 2">
+                    <div class="promo-box">
+                        <div>โปรโมชั่นพิเศษ!</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>สินค้า 2</h3>
+                        <p class="product-description">รายละเอียดสินค้า 2 ที่น่าสนใจ</p>
+                        <p class="product-price">฿750</p>
+                        <button class="btn">ซื้อเลย</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
+    -->
+    <!DOCTYPE html>
+    <html lang="th">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Swiper แบรนด์ยอดนิยม</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <style>
+            .brand-popular-swiper {
+                width: 100%;
+                height: 150px;
+                margin: 20px 0;
+            }
+            .brand-popular-swiper__slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #f8f9fa;
+                border-radius: 10px;
+                border: 1px solid #e0e0e0;
+                height: 60% !important;
+            }
+            .brand-popular-swiper__slide img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div class="brand-popular-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide brand-popular-swiper__slide">
+                    <img src="https://via.placeholder.com/150x80?text=Brand+1" alt="Brand 1">
+                </div>
+                <div class="swiper-slide brand-popular-swiper__slide">
+                    <img src="https://static.homepro.co.th/homepage/brand/Brandhit_2_Samsung.jpg" alt="Brand 2">
+                </div>
+                <div class="swiper-slide brand-popular-swiper__slide">
+                    <img src="https://via.placeholder.com/150x80?text=Brand+3" alt="Brand 3">
+                </div>
+                <div class="swiper-slide brand-popular-swiper__slide">
+                    <img src="https://via.placeholder.com/150x80?text=Brand+3" alt="Brand 3">
+                </div>
+                <div class="swiper-slide brand-popular-swiper__slide">
+                    <img src="https://via.placeholder.com/150x80?text=Brand+3" alt="Brand 3">
+                </div>
+                <div class="swiper-slide brand-popular-swiper__slide">
+                    <img src="https://via.placeholder.com/150x80?text=Brand+3" alt="Brand 3">
+                </div>
+                <div class="swiper-slide brand-popular-swiper__slide">
+                    <img src="https://via.placeholder.com/150x80?text=Brand+3" alt="Brand 3">
+                </div>
+                <div class="swiper-slide brand-popular-swiper__slide">
+                    <img src="https://via.placeholder.com/150x80?text=Brand+3" alt="Brand 3">
+                </div>
+                <div class="swiper-slide brand-popular-swiper__slide">
+                    <img src="https://via.placeholder.com/150x80?text=Brand+3" alt="Brand 3">
+                </div>
+            </div>
+            <div class="brand-popular-swiper__pagination"></div>
+            <div class="brand-popular-swiper__button brand-popular-swiper__button--next"></div>
+            <div class="brand-popular-swiper__button brand-popular-swiper__button--prev"></div>
+        </div>
+    
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const swiper = new Swiper('.brand-popular-swiper', {
+                    slidesPerView: 6,
+                    spaceBetween: 10,
+                    loop: true,
+                    pagination: {
+                        el: '.brand-popular-swiper__pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.brand-popular-swiper__button--next',
+                        prevEl: '.brand-popular-swiper__button--prev',
+                    },
+                });
+            });
+        </script>
+    </body>
+    </html>
