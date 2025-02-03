@@ -1,2 +1,0 @@
-# Luckking
-profile company
