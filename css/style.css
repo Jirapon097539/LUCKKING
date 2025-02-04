@@ -2544,15 +2544,13 @@ section.promotion-section {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-
 }
 
 .detail-work-job th,
-td {
+.detail-work-job td {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: left;
-
 }
 
 .detail-work-job th {
@@ -2584,6 +2582,77 @@ td {
     height: 16px;
     fill: white;
 }
+
+
+
+@media (max-width: 480px) {
+    .detail-work-job {
+        padding: 20px 0;
+    }
+
+    .detail-work-job h1 {
+        font-size: 20px;
+    }
+
+    .detail-work-job th,
+    .detail-work-job td {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .detail-work-job .details-btn {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+
+    .detail-work-job .details-btn svg {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .detail-work-job table,
+    .detail-work-job thead,
+    .detail-work-job tbody,
+    .detail-work-job th,
+    .detail-work-job td,
+    .detail-work-job tr {
+        display: block; /* Convert table elements to block */
+        margin: 5px;
+    }
+
+    .detail-work-job th {
+        position: absolute;
+        top: -9999px;
+        left: -9999px; /* Hide headers */
+    }
+
+    .detail-work-job tr {
+        border: 1px solid #ddd;
+        margin-bottom: 10px; /* Add spacing between rows */
+    }
+
+    .detail-work-job td {
+        border: none;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        padding-left: 50%; /* Add space for labels */
+        text-align: right;
+    }
+
+    .detail-work-job td::before {
+        content: attr(data-label); /* Use data-label attribute for labels */
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+}
+
 /* ส่วนหัวของประกาศ */
 .job-listing{
   
